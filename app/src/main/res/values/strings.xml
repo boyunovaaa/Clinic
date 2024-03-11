@@ -6,4 +6,11 @@
     <string name="entrance">Вход</string>
     <string name="account">Если у вас нет учетной записи,</string>
     <string name="registration">зарегистрируйтесь</string>
+    <string name="registration2">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="number">Телефон</string>
+    <string name="personal_dan">Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным</string>
+    <string name="here">здесь</string>
+    <string name="text">текстом</string>
 </resources>
