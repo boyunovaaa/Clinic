@@ -13,4 +13,8 @@
     <string name="personal_dan">Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным</string>
     <string name="here">здесь</string>
     <string name="text">текстом</string>
+    <string name="new_name">Новое имя</string>
+    <string name="new_surname">Новая фамилия</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="save_changes">Сохранить изменения</string>
 </resources>
