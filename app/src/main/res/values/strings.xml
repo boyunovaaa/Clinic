@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Clinic</string>
+    <string name="autorization">Авторизация</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="entrance">Вход</string>
+    <string name="account">Если у вас нет учетной записи,</string>
+    <string name="registration">зарегистрируйтесь</string>
 </resources>
