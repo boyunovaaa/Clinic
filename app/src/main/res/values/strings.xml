@@ -13,8 +13,23 @@
     <string name="personal_dan">Нажимая кнопку «Зарегистрироваться», я подтверждаю свою дееспособность, согласие на получение информации об оформлении и получении заказа, согласие на обработку персональных данных в соответствии с указанным</string>
     <string name="here">здесь</string>
     <string name="text">текстом</string>
+
     <string name="new_name">Новое имя</string>
     <string name="new_surname">Новая фамилия</string>
     <string name="new_password">Новый пароль</string>
     <string name="save_changes">Сохранить изменения</string>
+
+    <string name="clara">Клара</string>
+    <string name="ageclara">6 лет</string>
+    <string name="indicators">Основные показатели:</string>
+    <string name="changeData">Изменить данные</string>
+    <string name="temperature">Температура:</string>
+    <string name="pressure">Давление:</string>
+    <string name="heartRate">ЧСС:</string>
+    <string name="breath">Частота дыхания:</string>
+    <string name="example_email">masha@mail.com</string>
+    <string name="go_back">Вернуться назад</string>
+    <string name="edit_text">Редактировать</string>
+    <string name="logout">Выйти</string>
+    <string name="delete_account">Удалить аккаунт</string>
 </resources>
