@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:text="Показатель на данный момент:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/temperature_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:text="36°C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/temperature_btn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="612dp"
+        android:background="@drawable/edittext_bg_rounded_green"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/temp_choose"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/day_btn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="560dp"
+        android:background="@drawable/edittext_bg_rounded_green"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/day"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/week_btn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="560dp"
+        android:background="@drawable/bg_rounded_green_light"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/week"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/month_btn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="560dp"
+        android:background="@drawable/bg_rounded_green_light"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/month"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/chss_btn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="612dp"
+        android:background="@drawable/bg_rounded_green_light"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/chss"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/pressure_btn"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="612dp"
+        android:background="@drawable/bg_rounded_green_light"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/pressure_choose"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/breathFrequency_btn"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="612dp"
+        android:background="@drawable/bg_rounded_green_light"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+        android:paddingStart="@dimen/zero_padding_right"
+        android:text="@string/breath_frequency"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="LabelFor" />
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_bottom_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toStartOf="@+id/heart"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dog" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintStart_toEndOf="@+id/heart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="390dp"
+        android:layout_height="1sp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="390dp"
+        android:layout_height="1sp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/save_data"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/robotomedium"
+        android:text="@string/renew_data"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_text"
+        app:layout_constraintVertical_bias="0.943" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="392dp"
+        android:layout_height="372dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_rounded_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_text" />
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_text">
+
+
+    </LinearLayout>
+
+    <com.example.clinic.CustomDiagramView
+        android:id="@+id/diagramView"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

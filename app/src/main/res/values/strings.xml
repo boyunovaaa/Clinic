@@ -32,4 +32,12 @@
     <string name="edit_text">Редактировать</string>
     <string name="logout">Выйти</string>
     <string name="delete_account">Удалить аккаунт</string>
+    <string name="temp_choose">Температура</string>
+    <string name="chss">ЧСС</string>
+    <string name="pressure_choose">Давление</string>
+    <string name="breath_frequency">Частота дыхания</string>
+    <string name="day">День</string>
+    <string name="week">Неделя</string>
+    <string name="month">Месяц</string>
+    <string name="renew_data">Обновить данные</string>
 </resources>
