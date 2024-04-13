@@ -21,6 +21,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".RegistActivity">
+        </activity>
+        <activity
+            android:name=".EditPersonActivity">
+        </activity>
+        <activity
+            android:name=".IndicatorActivity">
+        </activity>
+        <activity
+            android:name=".PersonalInfoActivity">
+        </activity>
+        <activity
+            android:name=".HeartRateActivity">
+        </activity>
+        <activity
+            android:name=".TemperatureActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -11,8 +11,8 @@
         android:id="@+id/temperature_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="Показатель на данный момент:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -21,8 +21,8 @@
         android:id="@+id/temperature_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         android:text="76 удар/мин"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -30,7 +30,7 @@
     <TextView
         android:id="@+id/temperature_btn"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="612dp"
         android:background="@drawable/bg_rounded_green_light"
@@ -38,21 +38,21 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/temp_choose"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.611"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/day_btn"
         android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="14dp"
         android:layout_marginBottom="560dp"
         android:background="@drawable/edittext_bg_rounded_green"
@@ -60,21 +60,21 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/day"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.08"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/week_btn"
         android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="14dp"
         android:layout_marginBottom="560dp"
         android:background="@drawable/bg_rounded_green_light"
@@ -82,7 +82,7 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/week"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,7 +96,7 @@
     <TextView
         android:id="@+id/month_btn"
         android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="14dp"
         android:layout_marginBottom="560dp"
         android:background="@drawable/bg_rounded_green_light"
@@ -104,7 +104,7 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/month"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -118,7 +118,7 @@
     <TextView
         android:id="@+id/chss_btn"
         android:layout_width="50dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="612dp"
         android:background="@drawable/edittext_bg_rounded_green"
@@ -126,21 +126,21 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/chss"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.611"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/pressure_btn"
         android:layout_width="90dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="612dp"
         android:background="@drawable/bg_rounded_green_light"
@@ -148,21 +148,21 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/pressure_choose"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.611"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/breathFrequency_btn"
         android:layout_width="130dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="612dp"
         android:background="@drawable/bg_rounded_green_light"
@@ -170,7 +170,7 @@
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
-        android:paddingStart="@dimen/zero_padding_right"
+        android:paddingStart="@dimen/zero_padding"
         android:text="@string/breath_frequency"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -178,7 +178,7 @@
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintVertical_bias="0.611"
         tools:ignore="LabelFor" />
 
     <View
@@ -231,10 +231,10 @@
         android:background="@color/grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.107" />
 
     <View
         android:id="@+id/view"
@@ -246,7 +246,7 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.21" />
 
     <Button
         android:id="@+id/save_data"
@@ -288,7 +288,7 @@
 
     </LinearLayout>
 
-    <com.example.clinic.CustomDiagramView
+    <com.example.clinic.HeartRateDiagram
         android:id="@+id/diagramView"
         android:layout_width="380dp"
         android:layout_height="350dp"

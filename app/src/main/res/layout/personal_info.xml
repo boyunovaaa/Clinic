@@ -83,7 +83,7 @@
     <TextView
         android:id="@+id/example_email"
         android:layout_width="200dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="512dp"
         android:background="@drawable/edittext_bg_rounded_grey"
         android:ems="10"
@@ -97,14 +97,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.063"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/example_name"
         android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="464dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="448dp"
         android:background="@drawable/edittext_bg_rounded_grey"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -117,7 +116,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.063"
         tools:ignore="LabelFor" />
 
     <Button
