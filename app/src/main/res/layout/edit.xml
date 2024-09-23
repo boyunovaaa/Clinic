@@ -167,7 +167,7 @@
         android:id="@+id/save_data"
         android:layout_width="230dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/blue_dark"
         android:fontFamily="@font/robotomedium"
         android:text="@string/save_changes"
         android:textSize="16sp"

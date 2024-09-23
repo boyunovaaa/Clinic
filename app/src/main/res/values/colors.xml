@@ -8,7 +8,8 @@
     <color name="grey_light">#F0F0F0</color>
     <color name="green_light">#A8ECD7</color>
     <color name="red">#FE614C</color>
-    <color name="blue">#3CB9FF</color>
-    <color name="blue_light">#C1E9FF</color>
+    <color name="blue_dark">#3CB9FF</color>
+    <color name="blue_mid">#C1E9FF</color>
+    <color name="blue_light">#E4F5FF</color>
 
 </resources>
