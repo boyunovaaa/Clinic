@@ -21,7 +21,7 @@ class HeartRateDiagram(context: Context) : View(context) {
     private val temperatures = (34..46 step 2).toList()
 
     private val diagramPaint = Paint().apply {
-        color = Color.parseColor("#2ECC9C")
+        color = Color.parseColor("#3CB9FF")
     }
 
     override fun onDraw(canvas: Canvas) {

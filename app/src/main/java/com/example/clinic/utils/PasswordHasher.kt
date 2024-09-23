@@ -1,4 +1,4 @@
-package com.example.clinic
+package com.example.clinic.utils
 
 import java.security.MessageDigest
 

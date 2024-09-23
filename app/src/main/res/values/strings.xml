@@ -40,4 +40,9 @@
     <string name="week">Неделя</string>
     <string name="month">Месяц</string>
     <string name="renew_data">Обновить данные</string>
+    <string name="regVet">Регистрацию производит ветеринар</string>
+    <string name="address">Москва, ул.Михалковская, 63Б ст4</string>
+    <string name="phoneNum">+7(495)154-49-56</string>
+    <string name="city">Город</string>
+    <string name="changePet">Изменить питомца</string>
 </resources>

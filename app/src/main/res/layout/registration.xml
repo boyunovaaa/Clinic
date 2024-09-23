@@ -25,7 +25,7 @@
     <EditText
         android:id="@+id/EmailAddress"
         android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:background="@drawable/edittext_bg_rounded"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -45,7 +45,7 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:background="@drawable/edittext_bg_rounded"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -63,9 +63,29 @@
         tools:ignore="LabelFor" />
 
     <EditText
+        android:id="@+id/city"
+        android:layout_width="382dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/city"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number"
+        app:layout_constraintVertical_bias="0.256"
+        tools:ignore="LabelFor" />
+
+    <EditText
         android:id="@+id/name"
         android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:background="@drawable/edittext_bg_rounded"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -85,7 +105,7 @@
     <EditText
         android:id="@+id/surname"
         android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:background="@drawable/edittext_bg_rounded"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -105,7 +125,7 @@
     <EditText
         android:id="@+id/number"
         android:layout_width="382dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:background="@drawable/edittext_bg_rounded"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -126,7 +146,7 @@
         android:id="@+id/entrance"
         android:layout_width="382dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/blue"
         android:fontFamily="@font/robotomedium"
         android:text="@string/registration2"
         android:textSize="16sp"
@@ -135,7 +155,22 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.222" />
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/robotomedium"
+        android:text="@string/text"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.7" />
 
     <View
         android:id="@+id/view2"
@@ -147,7 +182,7 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/entrance"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.183" />
 
     <TextView
         android:id="@+id/account"
@@ -162,21 +197,6 @@
         app:layout_constraintHorizontal_bias="0.254"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.479" />
-
-    <TextView
-        android:id="@+id/registration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/robotomedium"
-        android:text="@string/text"
-        android:textColor="@color/green"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="0.612" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

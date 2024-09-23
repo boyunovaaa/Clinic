@@ -13,6 +13,7 @@ import com.example.clinic.MainActivity.DBHelper.Companion.COLUMN_NAME
 import com.example.clinic.MainActivity.DBHelper.Companion.COLUMN_PASSWORD
 import com.example.clinic.MainActivity.DBHelper.Companion.COLUMN_SURNAME
 import com.example.clinic.MainActivity.DBHelper.Companion.TABLE_NAME
+import com.example.clinic.utils.PasswordHasher
 
 class EditPersonActivity : AppCompatActivity() {
     private lateinit var currentUserEmail: String

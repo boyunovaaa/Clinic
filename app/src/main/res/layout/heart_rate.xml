@@ -11,174 +11,181 @@
         android:id="@+id/temperature_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Показатель на данный момент:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/temperature_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
         android:text="76 удар/мин"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
-        android:id="@+id/temperature_btn"
-        android:layout_width="100dp"
+        android:id="@+id/pressure_btn"
+        android:layout_width="90dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="612dp"
-        android:background="@drawable/bg_rounded_green_light"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/bg_rounded_blue_light"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
+
         android:gravity="center"
         android:inputType="text"
         android:paddingStart="@dimen/zero_padding"
-        android:text="@string/temp_choose"
+        android:text="@string/pressure_choose"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.611"
-        tools:ignore="LabelFor" />
-
-    <TextView
-        android:id="@+id/day_btn"
-        android:layout_width="120dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginBottom="560dp"
-        android:background="@drawable/edittext_bg_rounded_green"
-        android:ems="10"
-        android:fontFamily="@font/robotomedium"
-        android:gravity="center"
-        android:inputType="text"
-        android:paddingStart="@dimen/zero_padding"
-        android:text="@string/day"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/breathFrequency_btn"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.08"
         tools:ignore="LabelFor" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="390dp"
+        android:layout_height="1sp"
+        android:layout_marginStart="9dp"
+
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
 
     <TextView
         android:id="@+id/week_btn"
         android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginBottom="560dp"
-        android:background="@drawable/bg_rounded_green_light"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_rounded_blue_light"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
         android:paddingStart="@dimen/zero_padding"
+
         android:text="@string/week"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.063"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/day_btn"
         tools:ignore="LabelFor" />
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="390dp"
+        android:layout_height="1sp"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="53dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:id="@+id/month_btn"
-        android:layout_width="120dp"
+        android:id="@+id/breathFrequency_btn"
+        android:layout_width="130dp"
         android:layout_height="48dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginBottom="560dp"
-        android:background="@drawable/bg_rounded_green_light"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/bg_rounded_blue_light"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
+
         android:gravity="center"
         android:inputType="text"
         android:paddingStart="@dimen/zero_padding"
-        android:text="@string/month"
+        android:text="@string/breath_frequency"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.063"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/chss_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="612dp"
-        android:background="@drawable/edittext_bg_rounded_green"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bg_rounded_blue"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
+
         android:gravity="center"
         android:inputType="text"
         android:paddingStart="@dimen/zero_padding"
         android:text="@string/chss"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.318"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/temperature_btn"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
         tools:ignore="LabelFor" />
 
     <TextView
-        android:id="@+id/pressure_btn"
-        android:layout_width="90dp"
+        android:id="@+id/month_btn"
+        android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="612dp"
-        android:background="@drawable/bg_rounded_green_light"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_rounded_blue_light"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="center"
+        android:inputType="text"
+
+        android:paddingStart="@dimen/zero_padding"
+        android:text="@string/month"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/temperature_btn"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rounded_blue_light"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
         android:paddingStart="@dimen/zero_padding"
-        android:text="@string/pressure_choose"
+
+        android:text="@string/temp_choose"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.611"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
         tools:ignore="LabelFor" />
 
     <TextView
-        android:id="@+id/breathFrequency_btn"
-        android:layout_width="130dp"
+        android:id="@+id/day_btn"
+        android:layout_width="120dp"
         android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="612dp"
-        android:background="@drawable/bg_rounded_green_light"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/edittext_bg_rounded_blue"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
         android:gravity="center"
         android:inputType="text"
         android:paddingStart="@dimen/zero_padding"
-        android:text="@string/breath_frequency"
+
+        android:text="@string/day"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.611"
         tools:ignore="LabelFor" />
 
     <View
@@ -188,20 +195,10 @@
         android:background="@drawable/rounded_bottom_corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/dog"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="@+id/top"
-        app:layout_constraintEnd_toStartOf="@+id/heart"
-        app:layout_constraintStart_toStartOf="@+id/top"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dog" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/heart"
@@ -209,9 +206,24 @@
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@+id/top"
         app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/top"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toStartOf="@+id/heart"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        app:srcCompat="@drawable/dog" />
+
 
     <ImageView
         android:id="@+id/settings"
@@ -219,82 +231,33 @@
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@+id/top"
         app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toEndOf="@+id/heart"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/settings" />
 
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="390dp"
-        android:layout_height="1sp"
-        android:background="@color/grey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.107" />
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="390dp"
-        android:layout_height="1sp"
-        android:background="@color/grey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.21" />
-
-    <Button
-        android:id="@+id/save_data"
-        android:layout_width="230dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/green"
-        android:fontFamily="@font/robotomedium"
-        android:text="@string/renew_data"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temperature_text"
-        app:layout_constraintVertical_bias="0.943" />
 
     <View
         android:id="@+id/view3"
         android:layout_width="392dp"
         android:layout_height="372dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/bg_rounded_green_light"
+        android:background="@drawable/bg_rounded_blue_light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temperature_text" />
-
-
-    <LinearLayout
-        android:layout_width="380dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/temperature_text">
-
-
-    </LinearLayout>
 
     <com.example.clinic.HeartRateDiagram
         android:id="@+id/diagramView"
         android:layout_width="380dp"
         android:layout_height="350dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/view3"
         app:layout_constraintTop_toBottomOf="@+id/temperature_text" />
 
 

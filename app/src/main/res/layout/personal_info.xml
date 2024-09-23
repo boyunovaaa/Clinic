@@ -7,7 +7,6 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-
     <View
         android:id="@+id/top"
         android:layout_width="match_parent"
@@ -15,20 +14,10 @@
         android:background="@drawable/rounded_bottom_corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/dog"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="@+id/top"
-        app:layout_constraintEnd_toStartOf="@+id/heart"
-        app:layout_constraintStart_toStartOf="@+id/top"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dog" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/heart"
@@ -36,9 +25,24 @@
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@+id/top"
         app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/top"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toStartOf="@+id/heart"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        app:srcCompat="@drawable/dog" />
+
 
     <ImageView
         android:id="@+id/settings"
@@ -46,25 +50,24 @@
         android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@+id/top"
         app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toEndOf="@+id/heart"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/settings" />
-
 
     <Button
         android:id="@+id/go_back"
         android:layout_width="230dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/grey"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="78dp"
+        android:backgroundTint="@color/grey_dark"
         android:fontFamily="@font/robotomedium"
         android:text="@string/go_back"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/circular_image"
@@ -122,7 +125,7 @@
         android:id="@+id/entrance"
         android:layout_width="382dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/blue"
         android:fontFamily="@font/robotomedium"
         android:text="@string/edit_text"
         android:textSize="16sp"
@@ -137,7 +140,7 @@
         android:id="@+id/logout"
         android:layout_width="382dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/blue"
         android:fontFamily="@font/robotomedium"
         android:text="@string/logout"
         android:textSize="16sp"
@@ -161,6 +164,6 @@
         app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logout"
-        app:layout_constraintVertical_bias="0.553" />
+        app:layout_constraintVertical_bias="0.558" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

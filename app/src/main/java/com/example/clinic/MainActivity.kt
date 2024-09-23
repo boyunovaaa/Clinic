@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.clinic.utils.PasswordHasher
 
 class MainActivity : AppCompatActivity() {
     private lateinit var emailEditText: EditText

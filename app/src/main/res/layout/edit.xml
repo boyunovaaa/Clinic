@@ -18,7 +18,31 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/heart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
+        app:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
+        app:srcCompat="@drawable/heart" />
 
     <ImageView
         android:id="@+id/dog"
@@ -28,43 +52,22 @@
         app:layout_constraintEnd_toStartOf="@+id/heart"
         app:layout_constraintStart_toStartOf="@+id/top"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986"
         app:srcCompat="@drawable/dog" />
-
-    <ImageView
-        android:id="@+id/heart"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="@+id/top"
-        app:layout_constraintEnd_toEndOf="@+id/top"
-        app:layout_constraintStart_toStartOf="@+id/top"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/heart" />
-
-    <ImageView
-        android:id="@+id/settings"
-        android:layout_width="40dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="@+id/top"
-        app:layout_constraintEnd_toEndOf="@+id/top"
-        app:layout_constraintStart_toEndOf="@+id/heart"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/settings" />
 
 
     <Button
         android:id="@+id/go_back"
         android:layout_width="230dp"
         android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="15dp"
         android:backgroundTint="@color/grey"
         android:fontFamily="@font/robotomedium"
         android:text="@string/go_back"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintTop_toBottomOf="@+id/save_data" />
 
     <ImageView
         android:id="@+id/circular_image"
@@ -78,32 +81,13 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
-
-    <EditText
-        android:id="@+id/new_name"
-        android:layout_width="382dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="280dp"
-        android:background="@drawable/edittext_bg_rounded"
-        android:ems="10"
-        android:fontFamily="@font/robotomedium"
-        android:gravity="start|center_vertical"
-        android:hint="@string/new_name"
-        android:inputType="text"
-        android:paddingStart="10dp"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.135" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="352dp"
+        android:layout_marginBottom="440dp"
         android:background="@drawable/edittext_bg_rounded_grey"
         android:ems="10"
         android:fontFamily="@font/robotomedium"
@@ -116,6 +100,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/new_name"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="368dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/new_name"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/new_surname"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/new_surname"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.47"
         tools:ignore="LabelFor" />
 
     <EditText
@@ -136,14 +160,14 @@
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/new_surname"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.126"
         tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/save_data"
         android:layout_width="230dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/blue"
         android:fontFamily="@font/robotomedium"
         android:text="@string/save_changes"
         android:textSize="16sp"
@@ -152,28 +176,7 @@
         app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/new_password"
-        app:layout_constraintVertical_bias="0.9" />
-
-    <EditText
-        android:id="@+id/new_surname"
-        android:layout_width="382dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="220dp"
-        android:background="@drawable/edittext_bg_rounded"
-        android:ems="10"
-        android:fontFamily="@font/robotomedium"
-        android:gravity="start|center_vertical"
-        android:hint="@string/new_surname"
-        android:inputType="text"
-        android:paddingStart="10dp"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.25" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
