@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/rounded_bottom_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toStartOf="@+id/heart"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        app:srcCompat="@drawable/dog" />
+
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="@+id/top"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/heart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/choosePet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:text="Выбор питомца"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rounded_square_view"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_square_bg_blue_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosePet_text" />
+
+    <ImageView
+        android:id="@+id/circular_image"
+        android:layout_width="110dp"
+        android:layout_height="109dp"
+        android:background="@drawable/rounded_image_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <EditText
+        android:id="@+id/agecat"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/ageclara"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/circular_image"
+        app:layout_constraintTop_toBottomOf="@+id/namecat"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/namecat"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+
+        android:hint="@string/clara"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosePet_text"
+        tools:ignore="LabelFor" />
+
+
+
+    <View
+        android:id="@+id/rounded_square_view2"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_square_bg_blue_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_square_view" />
+
+    <ImageView
+        android:id="@+id/circular_image2"
+        android:layout_width="110dp"
+        android:layout_height="109dp"
+        android:background="@drawable/rounded_image_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <EditText
+        android:id="@+id/agecat2"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/ageclara"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/circular_image"
+        app:layout_constraintTop_toBottomOf="@+id/namecat2"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/namecat2"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+
+        android:hint="@string/clara"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_square_view"
+        tools:ignore="LabelFor" />
+
+
+    <View
+        android:id="@+id/rounded_square_view3"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_square_bg_blue_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_square_view2" />
+
+    <ImageView
+        android:id="@+id/circular_image3"
+        android:layout_width="110dp"
+        android:layout_height="109dp"
+        android:background="@drawable/rounded_image_bg"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <EditText
+        android:id="@+id/agecat3"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+        android:hint="@string/ageclara"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/circular_image"
+        app:layout_constraintTop_toBottomOf="@+id/namecat3"
+        app:layout_constraintVertical_bias="0.061"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/namecat3"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edittext_bg_rounded"
+        android:ems="10"
+        android:fontFamily="@font/robotomedium"
+        android:gravity="start|center_vertical"
+
+        android:hint="@string/clara"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_square_view2"
+        tools:ignore="LabelFor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
